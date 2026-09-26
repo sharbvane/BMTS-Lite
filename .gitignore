@@ -1,0 +1,26 @@
+# Local build environments and generated packages
+.buildenv/
+.venv/
+build/
+dist/
+release/
+
+# Runtime data, uploaded media, generated videos and caches
+data/
+audio-cache/
+__pycache__/
+*.py[cod]
+*.part
+*.mp4
+*.wav
+*.mp3
+*.log
+smoke-result.json
+verification.json
+progress.json
+
+# Local editors / OS metadata
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
