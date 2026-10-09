@@ -1,0 +1,7 @@
+# Runtime dependencies imported by BMTS Lite's existing worker/engine.
+# FFmpeg and ffprobe are external executables and must be available on PATH.
+librosa==0.11.0
+numpy==2.4.6
+opencv-python-headless==4.14.0.94
+scipy==1.17.1
+soundfile==0.13.1

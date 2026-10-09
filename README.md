@@ -2,7 +2,7 @@
 
 导入视频、音乐，选择画幅，生成整首音频长度的极速卡点混剪。
 
-> 许可：BMTS Lite Source-Available Non-Commercial License。源码可用于非商业学习、研究、测试与技术交流。商业使用、分发或集成需要作者事先书面许可，详见 [LICENSE](LICENSE)。
+> License: the source at this revision and later is available under GNU AGPL-3.0-only. Copyright © 2026 Cui (sharbvane). Historical snapshots retain the license that accompanied them; see [LICENSE-NOTICE.md](LICENSE-NOTICE.md).
 
 Windows x64 用户运行 Setup EXE，选择可写且空间充足的安装目录，然后打开 BMTS Lite。应用会在浏览器中打开，仅允许本机访问；关闭 BMTS Lite 启动窗口可退出。自带 Python 与 FFmpeg，无需安装开发工具或接入 API。
 
@@ -15,3 +15,5 @@ Windows x64 用户运行 Setup EXE，选择可写且空间充足的安装目录�
 页面采用轻量磨砂玻璃、柔和背景和克制动效，支持键盘与减少动态效果偏好。首页和保存结果提供 GitHub 项目链接：https://github.com/sharbvane/bgm-montage
 
 源码开发与 EXE 构建见 BUILD.md。Source ZIP 包含代码和构建配置，不包含运行环境、素材、缓存和生成的视频。engine 四个模块和 worker.py 保留既有逻辑；本轮调整集中在界面、本机服务、导出及发布打包。
+
+OpenMontage integration uses the existing worker and engine directly. Create an isolated Python 3.11 environment and install only the rendering dependencies with `python -m pip install -r requirements-runtime.txt`; FFmpeg and ffprobe must also be available on PATH. The OpenMontage integration guide documents the environment variables and tool contract.
